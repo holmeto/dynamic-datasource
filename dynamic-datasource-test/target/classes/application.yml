@@ -1,0 +1,44 @@
+server:
+  port: 8080
+
+#
+#mybatis:
+#  mapper-locations:
+#    - classpath:mapper/**/*.xml
+
+spring:
+  datasource:
+    dynamic:
+      datasources:
+        master:
+          group: group1
+          poll_name: pool_0
+          driver_class_name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/local_0?useSSL=true
+          username: root
+          password: 123456
+          hikari:
+            catalog: local_0
+            is_auto_commit: false
+        slave:
+          group: group1
+          poll_name: pool_1
+          driver_class_name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/local_1?useSSL=true
+          username: root
+          password: 123456
+          hikari:
+            catalog: local_1
+            is_auto_commit: true
+      sharding:
+        tables:
+          user:
+            actualDataNodes: pool_${0..1}.user_${0..1}
+            databaseStrategy:
+              inline:
+                shardingColumn: id
+                algorithmExpression: pool_${id % 2}
+            tableStrategy:
+              inline:
+                shardingColumn: id
+                algorithmExpression: user_${id % 2}

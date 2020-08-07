@@ -1,0 +1,219 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.dynamic",
+      "type": "com.ztk.dynamic.datasource.auto.DynamicDataSourceProperties",
+      "sourceType": "com.ztk.dynamic.datasource.auto.DynamicDataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.dynamic",
+      "type": "com.ztk.dynamic.datasource.sharding.auto.DynamicShardingProperties",
+      "sourceType": "com.ztk.dynamic.datasource.sharding.auto.DynamicShardingProperties"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari",
+      "type": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig",
+      "sourceType": "com.ztk.dynamic.datasource.auto.DynamicDataSourceProperties",
+      "sourceMethod": "getHikari()"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding",
+      "type": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration",
+      "sourceType": "com.ztk.dynamic.datasource.sharding.auto.DynamicShardingProperties",
+      "sourceMethod": "getSharding()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.datasource.dynamic.datasources",
+      "type": "java.util.Map<java.lang.String,com.ztk.dynamic.datasource.auto.DataSourceProperty>",
+      "sourceType": "com.ztk.dynamic.datasource.auto.DynamicDataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.catalog",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.connection-test-query",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.data-source-jndi-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.data-source-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.health-check-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.idle-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.initialization-fail-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.is-allow-pool-suspension",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.is-auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.is-isolate-internal-queries",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.is-read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.is-register-mbeans",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.jdbc-url",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.max-lifetime",
+      "type": "java.lang.Long",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.max-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.password",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.pool-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.schema",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.transaction-isolation-name",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.username",
+      "type": "java.lang.String",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.hikari.validation-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.ztk.dynamic.datasource.creator.hikari.HikariCpConfig"
+    },
+    {
+      "name": "spring.datasource.dynamic.props",
+      "type": "java.util.Properties",
+      "sourceType": "com.ztk.dynamic.datasource.sharding.auto.DynamicShardingProperties"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.binding-tables",
+      "type": "java.util.Collection<java.lang.String>",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.broadcast-tables",
+      "type": "java.util.Collection<java.lang.String>",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.default-data-source-name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.default-database-strategy",
+      "type": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingStrategyConfiguration",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.default-key-generator",
+      "type": "org.apache.shardingsphere.core.yaml.config.sharding.YamlKeyGeneratorConfiguration",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.default-table-strategy",
+      "type": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingStrategyConfiguration",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.encrypt-rule",
+      "type": "org.apache.shardingsphere.encrypt.yaml.config.YamlEncryptRuleConfiguration",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.master-slave-rules",
+      "type": "java.util.Map<java.lang.String,org.apache.shardingsphere.core.yaml.config.masterslave.YamlMasterSlaveRuleConfiguration>",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    },
+    {
+      "name": "spring.datasource.dynamic.sharding.tables",
+      "type": "java.util.Map<java.lang.String,org.apache.shardingsphere.core.yaml.config.sharding.YamlTableRuleConfiguration>",
+      "sourceType": "org.apache.shardingsphere.core.yaml.config.sharding.YamlShardingRuleConfiguration"
+    }
+  ],
+  "hints": []
+}

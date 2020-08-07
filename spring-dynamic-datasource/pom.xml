@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ztk</groupId>
+    <artifactId>spring-dynamic-datasource</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <spring.version>5.1.11.RELEASE</spring.version>
+        <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
+
+        <mybatis.version>3.4.5</mybatis.version>
+        <mybatis-spring.version>2.0.0</mybatis-spring.version>
+        <hikariCP.version>3.2.0</hikariCP.version>
+
+        <sharding-jdbc.version>4.1.1</sharding-jdbc.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>${spring-boot.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${hikariCP.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-core</artifactId>
+            <version>${sharding-jdbc.version}</version>
+        </dependency>
+
+        <!--&lt;!&ndash; for spring boot &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.shardingsphere</groupId>-->
+            <!--<artifactId>sharding-jdbc-spring-boot-starter</artifactId>-->
+            <!--<version>${sharding-jdbc.version}</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; for spring namespace &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.shardingsphere</groupId>-->
+            <!--<artifactId>sharding-jdbc-spring-namespace</artifactId>-->
+            <!--<version>${sharding-jdbc.version}</version>-->
+        <!--</dependency>-->
+
+    </dependencies>
+
+</project>

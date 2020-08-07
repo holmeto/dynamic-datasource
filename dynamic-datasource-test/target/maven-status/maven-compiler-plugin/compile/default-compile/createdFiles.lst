@@ -1,0 +1,11 @@
+com/ztk/test/dynamic/datasource/mapper/UserMapper.class
+com/ztk/test/dynamic/datasource/Application.class
+com/ztk/test/dynamic/datasource/service/TestService.class
+com/ztk/test/dynamic/datasource/mapper2/TestMapper.class
+com/ztk/test/dynamic/datasource/config/InitConfig.class
+com/ztk/test/dynamic/datasource/mapper/MapperPK.class
+com/ztk/test/dynamic/datasource/mapper/TestUserMapper.class
+com/ztk/test/dynamic/datasource/controller/TestController.class
+com/ztk/test/dynamic/datasource/mapper2/Mapper2PK.class
+com/ztk/test/dynamic/datasource/model/User.class
+com/ztk/test/dynamic/datasource/config/LocalDataSourceConfig.class
